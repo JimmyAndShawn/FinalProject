@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int fighting()
+void fighting()
 {
 	int end;
 	string choice;
@@ -110,15 +110,4 @@ int fighting()
 			cin >> end;
 		} while (end != 1);
 	}
-
-	/*do{
-	srand(time(NULL));
-	int d20 = rand() % 20 + 1;
-	int d4 = rand() % 4 + 1;
-	cout << d20 << endl;
-	cin >> end;
-	} while (end != 1); */
-
-	system("pause");
-	return 0;
 }

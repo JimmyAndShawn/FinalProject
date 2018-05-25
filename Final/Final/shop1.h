@@ -5,16 +5,8 @@ Date Began:  05/10/2018				Date End:
 
 #include <iostream>
 using namespace std;
-int shop1(int totalGold, int gI1, int gI2, int gI3)
+void shop1(int totalGold, int gI1, int gI2, int gI3)
 {
-	if (gI1 > 3 && gI2 > 3 && gI3 > 3)
-	{
-		totalGold = 100;
-		gI1 = 00;
-		gI2 = 00;
-		gI3 = 00;
-	}
-	int userGold = totalGold;
 	int i1 = gI1;
 	int i2 = gI2;
 	int i3 = gI3;
