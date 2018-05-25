@@ -8,10 +8,10 @@
 </h4>
 
 <p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
+  <a href="#creators">Creators</a> •
+  <a href="#about">About</a> •
+  <a href="#how-to-play">How To Play</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
