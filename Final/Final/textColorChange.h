@@ -1,24 +1,31 @@
 #include <iostream>
 #include <string>
 #include <windows.h>
-#include "Source1.ccp"
+using namespace std;
 
-int Felix()
+void Felix()
 {
 	HANDLE hConsole;
-	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hConsole, 14);
-	cout << "Felix ";
+	char felix[] = { "Felix " };
+	for (int i = 0; i < strlen(felix); i++)
+	{
+		hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+		SetConsoleTextAttribute(hConsole, 14);
+		cout << felix[i];
+		Sleep(50);
+	}
 	SetConsoleTextAttribute(hConsole, 7);
-	return main();
 }
-int King()
+void King()
 {
 	HANDLE hConsole;
-	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleActiveScreenBuffer(hConsole);
-	SetConsoleTextAttribute(hConsole, 8);
-	cout << "King ";
+	char king[] = { "King " };
+	for (int i = 0; i < strlen(king); i++)
+	{
+		hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+		SetConsoleTextAttribute(hConsole, 8);
+		cout << king[i];
+		Sleep(50);
+	}
 	SetConsoleTextAttribute(hConsole, 7);
-	return main();
 }

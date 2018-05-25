@@ -5,8 +5,7 @@ Date Began:  05/10/2018				Date End:
 
 #include <iostream>
 using namespace std;
-void shop1(int totalGold, int gI1, int gI2, int gI3);
-int main1(int totalGold, int gI1, int gI2, int gI3)
+int shop1(int totalGold, int gI1, int gI2, int gI3)
 {
 	if (gI1 > 3 && gI2 > 3 && gI3 > 3)
 	{
@@ -15,45 +14,7 @@ int main1(int totalGold, int gI1, int gI2, int gI3)
 		gI2 = 00;
 		gI3 = 00;
 	}
-	int goONo;
-	int i1 = gI1;
-	int i2 = gI2;
-	int i3 = gI3;
 	int userGold = totalGold;
-	int inventory[] = { i1, i2, i3 };
-	cout << "Current Inventory :" << endl;	//Shows Current Inventory
-	cout << "Gold:  " << userGold << endl;
-	for (int x = 0; x < 3; x++)
-	{
-		switch (inventory[x])
-		{
-		case 00:
-			cout << "EMPTY" << endl;
-			break;
-		case 01:
-			cout << "Rope -- 25g" << endl;
-			break;
-		case 02:
-			cout << "Potion -- 15g" << endl;
-			break;
-		case 03:
-			cout << "Sword -- 75g" << endl;
-			break;
-		default:
-			break;
-		}
-	}
-	cout << "GO TO SHOP?" << endl;
-	cin >> goONo;
-	if (goONo == 1)
-	{
-		shop1(totalGold, gI1, gI2, gI3);
-	}
-	//system ("pause");
-	return 0;
-}
-void shop1(int totalGold, int gI1, int gI2, int gI3)
-{
 	int i1 = gI1;
 	int i2 = gI2;
 	int i3 = gI3;
@@ -202,5 +163,4 @@ void shop1(int totalGold, int gI1, int gI2, int gI3)
 	gI2 = inventory[1];
 	gI3 = inventory[2];
 	totalGold = userGold;
-	main1(totalGold, gI1, gI2, gI3);
 }
