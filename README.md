@@ -1,6 +1,7 @@
 <h1 align="center">
   <br>
   Kingdom Harbinger
+  <img src="menu.jpg" width="350" heigth="400"/>
   <br>
 </h1>
 
