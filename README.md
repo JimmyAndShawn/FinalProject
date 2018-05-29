@@ -26,19 +26,18 @@
  
  ## Key Features
  
-  1. Shop System
-  
-    a. Has a shop system that is able to let you purchase rope, potions, and swords. You'd need to earn enough gold throughout the course of the game in order to buy the item you desire. If the user does not have enough gold, then the output will simply display that you do not have enough gold. 
+  1.) Shop System
+          a. Has a shop system that is able to let you purchase rope, potions, and swords. You'd need to earn enough gold throughout the course of the game in order to buy the item you desire. If the user does not have enough gold, then the output will simply display that you do not have enough gold. 
   2. Text Art
-    a. The coding has many text art in order to enhance the visuals of the game.
-    b. Makes the game look neat
+          a. The coding has many text art in order to enhance the visuals of the game.
+          b. Makes the game look neat
   3. Dice simulator
-    a. Since this game is DnD, we added a random dice roller.
-    b. This is to simulate the rolling of dice in a DnD board game.
-    c. It's portrayed in our game to attack certain characters.
-    d. Also to show if your attack has reached the target, or missed.
+          a. Since this game is DnD, we added a random dice roller.
+          b. This is to simulate the rolling of dice in a DnD board game.
+          c. It's portrayed in our game to attack certain characters.
+          d. Also to show if your attack has reached the target, or missed.
   4. Colors
-    a. Improve visuals for the game
+          a. Improve visuals for the game
   5. Delays
-    b. Improve visuals for the game
+          b. Improve visuals for the game
     
