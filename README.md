@@ -66,5 +66,8 @@
        -Jimmy Thai
   
        -Shawn Herrick
+       
+## License
 
+MIT
 
