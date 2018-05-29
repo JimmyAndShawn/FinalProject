@@ -29,6 +29,7 @@
 1. Shop System
 
   a. Has a shop system that is able to let you purchase rope, potions, and swords. You'd need to earn enough gold throughout the course of the game in order to buy the item you desire. If the user does not have enough gold, then the output will simply display that you do not have enough gold. 
+  
 2. Text Art
 
   a. The coding has many text art in order to enhance the visuals of the game.
