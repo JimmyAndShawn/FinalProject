@@ -8,8 +8,8 @@
 </h4>
 
 <p align="center">
-  <a href="#creators">Creators</a> •
   <a href="#about">About</a> •
+  <a href="#creators">Creators</a> •
   <a href="#how-to-play">How To Play</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
