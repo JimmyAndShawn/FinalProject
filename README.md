@@ -49,4 +49,4 @@
   
 5. Delays
 
-  q. Improve visuals for the game
+  a. Improve visuals for the game
