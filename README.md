@@ -4,7 +4,9 @@
   <br>
 </h1>
 
-<img src="menu.JPG" width="600" heigth="500"/>
+<h1 align="center">
+<img src="menu.JPG" width="1200" heigth="500"/>
+</h1>
 
 <h4 align="center">A text-based story DnD game where your character's fate lies right under your finger tips.
 </h4>
