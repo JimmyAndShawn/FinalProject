@@ -63,8 +63,8 @@
 #After repository is downloaded, run the application in visual studio, then run the debugger by clicking the green arrow at the top.
 ```
 ## Creators
-    -Jimmy Thai
+       -Jimmy Thai
   
-     -Shawn Herrick
+       -Shawn Herrick
 
 
