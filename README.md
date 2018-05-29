@@ -32,26 +32,26 @@
   
 2. Text Art
 
-  a. The coding has many text art in order to enhance the visuals of the game.
+      a. The coding has many text art in order to enhance the visuals of the game.
   
-  b. Makes the game look neat
+      b. Makes the game look neat
   
 3. Dice simulator
 
-  a. Since this game is DnD, we added a random dice roller.
+      a. Since this game is DnD, we added a random dice roller.
   
-  b. This is to simulate the rolling of dice in a DnD board game.
+      b. This is to simulate the rolling of dice in a DnD board game.
   
-  c. It's portrayed in our game to attack certain characters.
+      c. It's portrayed in our game to attack certain characters.
   
-  d. Also to show if your attack has reached the target, or missed.
+      d. Also to show if your attack has reached the target, or missed.
   
 4. Colors
 
-  a. Improve visuals for the game.
+      a. Improve visuals for the game.
   
-  b. Differentiate which character is which.
+      b. Differentiate which character is which.
   
 5. Delays
 
-  a. Improve visuals for the game
+       a. Improve visuals for the game
