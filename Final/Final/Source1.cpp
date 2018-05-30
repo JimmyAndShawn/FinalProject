@@ -1,71 +1,128 @@
-using namespace std;
-#include <string> 
+#include <cwchar>
+#include <windows.h>
 #include <iostream>
-#include "textColorChange.h"
-#include "shop1.h"
-#include "fighting.h"
-void fighting();
-void shop1(int totalGold, int gI1, int gI2, int gI3);
-void Felix();
-void King();
-int main(int totalGold, int gI1, int gI2, int gI3)
+#include <string>
+#include <stdio.h>
+#include "storyFull.h"
+#pragma warning(disable: 4996)
+using namespace std;
+
+void s0();
+void s1();
+void s2();
+void s3A();
+void s3B();
+void s4A();
+void s4B();
+void s4C();
+void s5A();
+void s5B();
+void s5C();
+int main()
 {
-	if (gI1 > 3 && gI2 > 3 && gI3 > 3)
-	{
-		totalGold = 100;
-		gI1 = 00;
-		gI2 = 00;
-		gI3 = 00;
-	}
-	int pause = 0;
-	char myStory[] = { "Old Man Jenkins: \"YOU CAN'T KEEP DOING THIS THE WILL KILL YOU!!\"\n" };
-	for (int i = 0; i < strlen(myStory); i++)
-	{
-		cout << myStory[i];
-		Sleep(50);
-		switch (i)
+	CONSOLE_FONT_INFOEX cfi;
+	cfi.cbSize = sizeof(cfi);
+	cfi.nFont = 0;
+	cfi.dwFontSize.X = 0;                   // Width of each character in the font
+	cfi.dwFontSize.Y = 40;                  // Height
+	cfi.FontFamily = FF_DONTCARE;
+	cfi.FontWeight = FW_NORMAL;
+	std::wcscpy(cfi.FaceName, L"Consolas"); // Choose your font
+	SetCurrentConsoleFontEx(GetStdHandle(STD_OUTPUT_HANDLE), FALSE, &cfi);
+
+	HANDLE hConsole;
+	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
+	string choice;
+
+	char arrowRight = 16;
+	char arrowDown = 31;
+	int c;
+
+top:
+	//welcoming screen + instructions
+	cout << "\n\n\n                           Kingdom Harbinger!" << endl;
+	cout << "                   .-                                        _,-. " << endl;
+	cout << "	    ______/C_________________________________,.--v/^^ ,/       " << endl;
+	cout << "	 ,n#|##|#}{------------------------------ - - - ___-^          " << endl;
+	cout << "	,,,```````|/,-,,,^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^               " << endl;
+	cout << "                 c/,                                              " << endl;
+	Sleep(1000);
+	cout << "      	                      " << arrowRight << " [start]" << endl;
+	Sleep(1000);
+	cout << "\n	                      " << arrowRight << " [info]" << endl;
+	Sleep(1000);
+	cout << "\n	                      " << arrowRight << " [exit]" << endl;
+	Sleep(1000);
+
+	cout << "\n\n\n\n\nInput Answer: ";
+	cin >> choice;
+	while (choice != "start"); {
+		if (choice == "info")
 		{
-		case 43:
-			Felix();
-			break;
-		case 47:
-			King();
-			break;
-		default:
-			break;
-		}
-	}
-	int choose;
-	char choice[] = { "Would you like to go to the (1) shop or to the (2) training grounds?\n>" };
-	for (int i = 0; i < strlen(choice); i++)
-	{
-		cout << choice[i];
-		Sleep(50);
-	}
-	cin >> choose;
-	while (!(cin >> choose))					//User Input
-	{
-		cout << "ERROR!! INVALID INPUT PLEASE TRY AGAIN\n>" << endl;
-		cin.clear();
-		cin.ignore(100000, '\n');
-	}
-		if (choose == 1)
-		{
-			shop1(totalGold, gI1, gI2, gI3);
-		}
-		else if (choose == 2)
-		{
-			fighting();
-		}
-		else
-		{
-			char error[] = { "Error!! Try Again." };
-			for (int i = 0; i < strlen(error); i++)
+			system("cls");
+			Sleep(1000);
+
+			char myStory[] = { "This is a text based story where you'll be traveling along as a Rogue.\n\nYour objective is to complete multiple stages and tasks which will lead \nyou to the end.\n\nYou may survive and also die, different choices lead you into choosing \nif you're going to be a good, bad, or neutral character.\n" };
+
+			for (int x = 0; x < strlen(myStory); x++)
 			{
-				cout << error;
+				cout << myStory[x];
 				Sleep(50);
+			}
+
+			Sleep(1000);
+			cout << "\nWould you like to go back to the start screen?" << endl;
+			Sleep(1000);
+			cout << "\n	1. [yes]" << endl;
+			Sleep(1000);
+			cout << "\n	2. [no]" << endl;
+			Sleep(1000);
+
+			cout << "\n\n\n\n\n\nInput Answer: ";
+			cin >> choice;
+			if (choice != "yes")
+			{
+				do{
+					system("cls");
+					cout << "This is a text based story where you'll be traveling along as a Rogue.\n\nYour objective is to complete multiple stages and tasks which will lead \nyou to the end.\n\nYou may survive and also die, different choices lead you into choosing \nif you're going to be a good, bad, or neutral character.\n" << endl;
+					cout << "\nWould you like to go back to the start screen?" << endl;
+					cout << "\n	1. [yes]" << endl;
+					cout << "\n	2. [no]" << endl;
+					cout << "\n\n\n\n\n\n\nInput Answer: ";
+					cin >> choice;
+				} while (choice != "yes");
+			}
+			if (choice == "yes")
+			{
+				system("cls");
+				goto top;
+
+			}
+		}
+		else if (choice == "exit")
+		{
+			return 0;
+		}
+		else if (choice != "start")
+		{
+			system("cls");
+			cout << "\n\n\n                           Kingdom Harbinger!" << endl;
+			cout << "                   .-                                        _,-. " << endl;
+			cout << "	    ______/C_________________________________,.--v/^^ ,/       " << endl;
+			cout << "	 ,n#|##|#}{------------------------------ - - - ___-^          " << endl;
+			cout << "	,,,```````|/,-,,,^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^               " << endl;
+			cout << "                 c/,                                              " << endl;
+			cout << "      	                      " << arrowRight << " [start]" << endl;
+			cout << "\n	                      " << arrowRight << " [info]" << endl;
+			cout << "\n	                      " << arrowRight << " [exit]" << endl;
+
+			cout << "\n\n\n\n\nInput Answer: ";
+			cin >> choice;
 		}
 	}
+	s0();
+	s1();
 	system("pause");
 	return 0;
 }
