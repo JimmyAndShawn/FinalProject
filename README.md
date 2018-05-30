@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  Kingdom Harbinger
+  :fire: Kingdom Harbinger :fire:
   <br>
 </h1>
 
