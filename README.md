@@ -64,10 +64,9 @@
 5. Delays
 
       a. Improve visuals for the game
-       
-<h4 align="center">       
-Download
-</h4>
+              
+## Download
+
 ```bash
 #Download repository and run the application.
 #After repository is downloaded, run the application in visual studio, then run the debugger by clicking the green arrow at the top.
