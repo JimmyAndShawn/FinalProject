@@ -65,7 +65,7 @@
 
       a. Improve visuals for the game
        
-## Download
+##      Download
 
 ```bash
 #Download repository and run the application.
