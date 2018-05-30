@@ -81,7 +81,7 @@
 ## Creators
        -Jimmy Thai
   
-       -Shawn Herrick
+       -Shawn Herrick:trollface:
        
 ## License
 
