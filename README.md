@@ -22,8 +22,7 @@
 
 <img src = "flowchart.jpg">
 
-<h1 align="center">
-About
+<h1 align="center">About
 </h1>
 
  * Kingdom Harbinger is a text-based story game where you'll be traveling along as a Rogue!
