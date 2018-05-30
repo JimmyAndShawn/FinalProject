@@ -28,9 +28,13 @@
 
 
  * Kingdom Harbinger is a text-based story game where you'll be traveling along as a Rogue!
+ 
  * Your objective is to complete multiple stages and tasks which will lead you to the end.
+ 
  * Different choices lead you into choosing if you're going to be a good, bad, or neutral character.
+ 
  * You may survive and may also die.
+ 
  * DnD based.
  
  ## :point_right: Key Features
