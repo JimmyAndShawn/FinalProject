@@ -30,7 +30,7 @@
  * You may survive and may also die.
  * DnD based.
  
- ## Key Features
+ ## :point_right: Key Features
  
 1. Shop System
 
@@ -62,21 +62,21 @@
 
       a. Improve visuals for the game
        
-## Download
+## :point_right: Download
 
 ```bash
 #Download repository and run the application.
 #After repository is downloaded, run the application in visual studio, then run the debugger by clicking the green arrow at the top.
 ```
 
-## Video
+## :point_right: Video
 
-## Creators
+## :point_right: Creators
        -Jimmy Thai
   
        -Shawn Herrick
        
-## License
+## :point_right: License
 
 MIT
 
