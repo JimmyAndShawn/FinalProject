@@ -78,10 +78,10 @@
 
 ## Video
 
-## Creators
+## Creators :trollface:
        -Jimmy Thai
   
-       -Shawn Herrick :trollface:
+       -Shawn Herrick
        
 ## License
 
