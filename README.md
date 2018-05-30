@@ -76,5 +76,5 @@
        
 ## License
 
-        MIT
+MIT
 
