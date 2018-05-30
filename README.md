@@ -20,6 +20,8 @@
   <a href="#license">License</a>
 </p>
 
+<img src = "flowchart.jpg">
+
 ## About
 
  * Kingdom Harbinger is a text-based story game where you'll be traveling along as a Rogue!
