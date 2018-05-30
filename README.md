@@ -5,6 +5,10 @@
 </h1>
 
 <h1 align="center">
+<img src = "dragon.JPG">
+</h1>
+
+<h1 align="center">
 <img src = "sword1.JPG">
 </h1>
 
