@@ -83,7 +83,7 @@
   
        -Shawn Herrick
        
-## :small_orange_diamond: License :small_orange_diamond:
+## License
 
         MIT
 
