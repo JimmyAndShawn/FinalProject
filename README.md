@@ -69,7 +69,7 @@
 
       a. Improve visuals for the game
               
-## Download
+## :small_orange_diamond: Download :small_orange_diamond:
 
 ```bash
 #Download repository and run the application.
