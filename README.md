@@ -78,7 +78,7 @@
 
 ## Video
 
-## Creators :trollface:
+## Creators
        -Jimmy Thai
   
        -Shawn Herrick
