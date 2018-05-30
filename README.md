@@ -65,21 +65,21 @@
 
       a. Improve visuals for the game
        
-## :point_right: Download
+## Download
 
 ```bash
 #Download repository and run the application.
 #After repository is downloaded, run the application in visual studio, then run the debugger by clicking the green arrow at the top.
 ```
 
-## :point_right: Video
+## Video
 
-## :point_right: Creators
+## Creators
        -Jimmy Thai
   
        -Shawn Herrick
        
-## :point_right: License
+## License
 
         MIT
 
