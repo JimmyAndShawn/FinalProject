@@ -76,14 +76,14 @@
 #After repository is downloaded, run the application in visual studio, then run the debugger by clicking the green arrow at the top.
 ```
 
-## Video
+## :small_orange_diamond: Video :small_orange_diamond:
 
-## Creators
+## :small_orange_diamond: Creators :small_orange_diamond:
        -Jimmy Thai
   
        -Shawn Herrick
        
-## License
+## :small_orange_diamond: License :small_orange_diamond:
 
         MIT
 
