@@ -9,9 +9,10 @@ using namespace std;
 
 void fighting()
 {
+top:
+	system("cls");
 	int end;
 	string choice;
-
 	cout << "\nChoose your attack option: \n\n	1. [knife] \n	2. [magicMissle] \n	3. [bowAndArrow]" << endl;
 
 	cout << "\nInput Answer: ";
@@ -36,11 +37,15 @@ void fighting()
 			{
 				Sleep(500);
 				cout << "\nAttack missed" << endl;
+				Sleep(3000);
+				goto top;
 			}
 			else
 			{
 				Sleep(500);
-				cout << "\nYou Hit for " << d4 << " damage!" << endl;
+				cout << "\nYou Hit the training dummy for " << d4 << " damage!" << endl;
+				Sleep(3000);
+				goto top;
 			}
 			cin >> end;
 		} while (end != 1);
@@ -65,19 +70,23 @@ void fighting()
 			if (d20 < 6)
 			{
 				Sleep(500);
-				cout << "\nAttack missed" << endl;
+				cout << "\nYou missed the trainging dummy." << endl;
+				Sleep(3000);
+				goto top;
 			}
 			else
-				Sleep(500);
+			Sleep(500);
 			{
 				int threeD4 = 0;
 				for (int i = 0; i < 3; i++)
 				{
+					srand(time(NULL));
 					d4 = rand() % 4 + 1;
 					threeD4 = d4 + threeD4;
-					cout << "\nYou Hit for " << threeD4 << " damage!" << endl;
 				}
-				//cout << "\nYou Hit for " << threeD4 << " damage!" << endl;
+				cout << "\nYou Hit the training dummy for " << threeD4 << " damage!" << endl;
+				Sleep(3000);
+				goto top;
 			}
 			cin >> end;
 		} while (end != 1);
@@ -91,23 +100,24 @@ void fighting()
 		cout << ".";
 		Sleep(500);
 		cout << ".";
-		do{
-			srand(time(NULL));
-			int d20 = rand() % 20 + 1;
-			int d6 = rand() % 6 + 1;
+		srand(time(NULL));
+		int d20 = rand() % 20 + 1;
+		int d6 = rand() % 6 + 1;
+		Sleep(500);
+		cout << d20 << endl;
+		if (d20 < 6)
+		{
 			Sleep(500);
-			cout << d20 << endl;
-			if (d20 < 6)
-			{
-				Sleep(500);
-				cout << "\nAttack missed" << endl;
-			}
-			else
-			{
-				Sleep(500);
-				cout << "\nYou Hit for " << d6 << " damage!" << endl;
-			}
-			cin >> end;
-		} while (end != 1);
+			cout << "\nAttack missed" << endl;
+			Sleep(3000);
+			goto top;
+		}
+		else
+		{
+			Sleep(500);
+			cout << "\nYou Hit the Training Dummy for " << d6 << " damage!" << endl;
+			Sleep(3000);
+			goto top;
+		}
 	}
 }

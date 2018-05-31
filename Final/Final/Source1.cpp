@@ -4,6 +4,8 @@
 #include <string>
 #include <stdio.h>
 #include "storyFull.h"
+#include "shop1.h"
+#include "fighting.h"
 #pragma warning(disable: 4996)
 using namespace std;
 
@@ -57,7 +59,7 @@ top:
 
 	cout << "\n\n\n\n\nInput Answer: ";
 	cin >> choice;
-	while (choice != "start"); {
+	while (choice != "start") {
 		if (choice == "info")
 		{
 			system("cls");
@@ -104,7 +106,7 @@ top:
 		{
 			return 0;
 		}
-		else if (choice != "start")
+		else
 		{
 			system("cls");
 			cout << "\n\n\n                           Kingdom Harbinger!" << endl;

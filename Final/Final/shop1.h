@@ -5,28 +5,29 @@ Date Began:  05/10/2018				Date End:
 
 #include <iostream>
 using namespace std;
-void shop1(int totalGold, int gI1, int gI2, int gI3)
+void shop1(/*int totalGold, int gI1, int gI2, int gI3*/)
 {
-	int i1 = gI1;
-	int i2 = gI2;
-	int i3 = gI3;
+	int i1 = 00;
+	int i2 = 00;
+	int i3 = 00;
 	int inventory[] = { i1, i2, i3 };		//Calls variables
-	int userGold = totalGold;
+	int userGold = 100;
 	int itemBuy = 0;
-	int rope = 25;
-	int ropeID = 01;
-	int potion = 15;
-	int potionID = 02;
-	int sword = 75;
-	int swordID = 03;
+	int juice = 10;
+	int juiceID = 01;
+	int crossBow = 70;
+	int crossBowID = 02;
 	do{
-		cout << "+=-------SHOP-------=+" << endl;	//Displays Shop
-		cout << "| 1 --- Rope --- 25g |" << endl;
-		cout << "| 2 -- Potion -- 15g |" << endl;
-		cout << "| 3 --- Sword -- 75g |" << endl;
-		cout << "+=------------------=+" << endl;
-		cout << "Current Inventory :" << endl;	//Shows Current Inventory
+		system("cls");
+		cout << "+=------------------Tavern--------------=+" << endl;	//Displays Shop
+		cout << "|                    _1_          _2_    |" << endl;
+		cout << "|     Item ------  \"Juice\"     CrossBow  |" << endl;
+		cout << "|     Gold ------   10 Gp        70 Gp   |" << endl;
+		cout << "| Description ---  1d4+1 Hp    1d10 dmg  |" << endl;
+		cout << "|                   -2 Ac                |" << endl;
+		cout << "+=--------------------------------------=+" << endl;
 		cout << "Gold:  " << userGold << endl;
+		cout << "Current Inventory :" << endl;	//Shows Current Inventory
 		for (int x = 0; x < 3; x++)
 		{
 			switch (inventory[x])
@@ -35,13 +36,10 @@ void shop1(int totalGold, int gI1, int gI2, int gI3)
 				cout << "EMPTY" << endl;
 				break;
 			case 01:
-				cout << "Rope -- 25g" << endl;
+				cout << "\"Juice\" -- 1d4+1 healing (-2 AC)" << endl;
 				break;
 			case 02:
-				cout << "Potion -- 15g" << endl;
-				break;
-			case 03:
-				cout << "Sword -- 75g" << endl;
+				cout << "CrossBow -- 1d10 Dmg (3 Bolts)" << endl;
 				break;
 			default:
 				break;
@@ -54,67 +52,71 @@ void shop1(int totalGold, int gI1, int gI2, int gI3)
 			cin.clear();
 			cin.ignore(100000, '\n');
 		}
-		if (itemBuy == 3 || itemBuy == 2 || itemBuy == 1)
+		if (itemBuy == 2 || itemBuy == 1)
 		{
 			switch (itemBuy)
 			{
 			case 1:									//If input is equal to 1 (Rope)
-				if (userGold >= rope)					//Checks for correct amount of gold
+				if (userGold >= juice)					//Checks for correct amount of gold
 				{
 					if (inventory[0] == 00)			//Checks inventory and subtracts gold if there is room for the item
 					{
-						inventory[0] = ropeID;
-						userGold = userGold - rope;
+						inventory[0] = juice;
+						userGold = userGold - juice;
 					}
 					else if (inventory[0] != 00 && inventory[1] == 00)
 					{
-						inventory[1] = ropeID;
-						userGold = userGold - rope;
+						inventory[1] = juiceID;
+						userGold = userGold - juice;
 					}
 					else if (inventory[0] != 00 && inventory[1] != 00 && inventory[2] == 00)
 					{
-						inventory[2] = ropeID;
-						userGold = userGold - rope;
+						inventory[2] = juiceID;
+						userGold = userGold - juice;
 					}
 					else
 					{
 						cout << "You do not have enough space" << endl;
+						Sleep(2000);
 					}
 				}
 				else
 				{
 					cout << "You do not have enough gold." << endl;
+					Sleep(2000);
 				}
 				break;
 			case 2:									//If Input is equal to 2 (Potion)
-				if (userGold >= potion)					//Checks to see if player has enough gold
+				if (userGold >= crossBow)					//Checks to see if player has enough gold
 				{
 					if (inventory[0] == 00)			//Checks inventory for space and subtracts gold if there is room for the item
 					{
-						inventory[0] = potionID;
-						userGold = userGold - potion;
+						inventory[0] = crossBowID;
+						userGold = userGold - crossBow;
 					}
 					else if (inventory[0] != 00 && inventory[1] == 00)
 					{
-						inventory[1] = potionID;
-						userGold = userGold - potion;
+						inventory[1] = crossBowID;
+						userGold = userGold - crossBow;
 					}
 					else if (inventory[0] != 00 && inventory[1] != 00 && inventory[2] == 00)
 					{
-						inventory[2] = potionID;
-						userGold = userGold - potion;
+						inventory[2] = crossBowID;
+						userGold = userGold - crossBow;
 					}
 					else
 					{
 						cout << "You do not have enough space" << endl;
+						Sleep(2000);
 					}
 				}
 				else
 				{
 					cout << "You do not have enough gold." << endl;
+					Sleep(2000);
 				}
 				break;
-			case 3:									//If input is equal to 3
+/*			case 3:									//If input is equal to 3
 				if (userGold >= sword)
 				{
 					if (inventory[0] == 00)
@@ -140,19 +142,20 @@ void shop1(int totalGold, int gI1, int gI2, int gI3)
 				else
 				{
 					cout << "You do not have enough gold." << endl;
-				}
+				}*/
 				break;
 			default:
 				break;
 			}
 		}
-		else if (itemBuy <= -2 || itemBuy >= 4 || itemBuy == 0)
+		else if (itemBuy <= -2 || itemBuy >= 2 || itemBuy == 0)
 		{
 			cout << "ERROR!! INVALID INPUT PLEASE TRY AGAIN!!" << endl;
+			Sleep(2000);
 		}
 	} while (itemBuy != -1);
-	gI1 = inventory[0];
-	gI2 = inventory[1];
-	gI3 = inventory[2];
-	totalGold = userGold;
+	i1 = inventory[0];
+	i2 = inventory[1];
+	i3 = inventory[2];
+	//totalGold = userGold;
 }
