@@ -77,6 +77,8 @@ $After repository is downloaded, run the application in visual studio, then run 
 
 ## Video
 
+<a href ="https://youtube.com">YouTube Video</a>
+
 ## Creators
        -Jimmy Thai
   
