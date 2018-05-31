@@ -86,5 +86,5 @@ $After repository is downloaded, run the application in visual studio, then run 
        
 ## License
 
-        MIT
+[MIT](https://tldrlegal.com/license/mit-license)
 
