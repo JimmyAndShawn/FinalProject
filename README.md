@@ -8,7 +8,7 @@
 <img src = "dragon.JPG">
 </h1>
 
-<h4 align="center">:small_orange_diamond:A text-based story DnD game where your character's fate lies right under your finger tips.
+<h4 align="center">:small_orange_diamond:A text-based story DnD game where your character's fate lies right under your finger tips.:small_orange_diamond:
 </h4>
 
 <p align="center">
