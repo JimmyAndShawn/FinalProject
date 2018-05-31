@@ -80,9 +80,9 @@ $After repository is downloaded, run the application in visual studio, then run 
 :point_right: <a href ="https://youtube.com">YouTube Video</a> :point_left:
 
 ## Creators
-[Jimmy Thai](https://github.com/jthai2)
+[Jimmy Thai](https://github.com/jthai2) (Click for user repository)
   
-[Shawn Herrick](https://github.com/ShawnDH)
+[Shawn Herrick](https://github.com/ShawnDH) (Click for user repository)
        
 ## License
 
