@@ -20,7 +20,7 @@
   <a href="#license">License</a>
 </p>
 
-<img src = "flowchart1.png" heights="1700" width ="1200">
+<img src = "flowchart1.png" heights="2000" width ="1200">
 
 
  ## About
