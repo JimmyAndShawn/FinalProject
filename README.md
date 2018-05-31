@@ -23,7 +23,7 @@
 <img src = "flowchart.jpg">
 
 
- ## :point_right: About
+ ## About :point_left:
  
 
 
