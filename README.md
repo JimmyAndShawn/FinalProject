@@ -23,7 +23,7 @@
 <img src = "flowchart.jpg">
 
 
- ## About :point_left:
+ ## About
  
 
 
@@ -37,7 +37,7 @@
  
  * DnD based.
  
- ## :point_right: Key Features
+ ## Key Features
  
 1. Shop System
 
