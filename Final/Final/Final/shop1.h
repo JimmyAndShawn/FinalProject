@@ -159,3 +159,4 @@ void shop1(/*int totalGold, int gI1, int gI2, int gI3*/)
 	i2 = inventory[1];
 	i3 = inventory[2];
 	//totalGold = userGold;
+}
