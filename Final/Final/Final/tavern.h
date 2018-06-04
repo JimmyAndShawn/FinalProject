@@ -1,12 +1,7 @@
-/* Final Project:
-Date Began:  05/10/2018				Date End:
-<ShawnD Herrick and Jimmy Thai> 's Source File
-*/
-
 #include <iostream>
 #include <windows.h>
 using namespace std;
-void shop1(/*int totalGold, int gI1, int gI2, int gI3*/)
+void tavern()
 {
 	int i1 = 00;
 	int i2 = 00;

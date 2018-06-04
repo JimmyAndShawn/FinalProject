@@ -9,6 +9,7 @@ using namespace std;
 
 void fighting()
 {
+
 top:
 	system("cls");
 	int end;
@@ -18,6 +19,10 @@ top:
 	cout << "\nInput Answer: ";
 	cin >> choice;
 
+	if (choice == "exit")
+	{
+		goto bottom;
+	}
 	if (choice == "knife")
 	{
 		cout << "\nRolling dice";
@@ -120,4 +125,6 @@ top:
 			goto top;
 		}
 	}
+bottom:
+	system("cls");
 }

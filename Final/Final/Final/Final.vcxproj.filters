@@ -23,10 +23,10 @@
     <ClInclude Include="fighting.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="shop1.h">
+    <ClInclude Include="storyFull.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="storyFull.h">
+    <ClInclude Include="tavern.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
